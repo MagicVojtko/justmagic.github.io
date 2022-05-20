@@ -77,7 +77,8 @@
 </div>
 <img src="https://c.tenor.com/lX8B7ubQd4kAAAAC/akebi-chan-oomfie.gif" alt="mwah animation GIF"> 
   
-  <script>
+  <head>
+<script>
 function clickCounter() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.clickcount) {
@@ -91,6 +92,11 @@ function clickCounter() {
   }
 }
 </script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
   
 <body style="background-color:#2c2f33;">
 </body>
