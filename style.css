@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background: rgb(11,9,11);
+    background: linear-gradient(0deg, rgba(11,9,11,1) 0%, rgb(187, 9, 9) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* NAVBAR */
+
+.nav {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-img {
+    position: relative;
+}
+
+.nav-text {
+    position: relative;
+    top: -10%;
+}
+
+.nav-text h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+}
+
+.nav-text h4 {
+    color: white;
+    font-weight: 900;
+    font-size: 8px;
+    text-align: center;
+}
+
+/* HEADER */
+
+.header {
+    height: 35vh;
+    margin: 0 5%;
+    display: flex;
+}
+
+.header-left, .header-right {
+    flex: 1;
+}
+
+.header-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.header-left h1 {
+    font-size: 128px;
+    font-weight: 800;
+    position: relative;
+    line-height: 85%;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.header-right h3 {
+    color: white;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: end;
+}
+
+.social-cont a img,
+.social-cont a svg
+{
+    width: 25px;
+    height: 25px;
+}
+
+#discord a svg {
+    fill: white;
+    stroke: white;
+    transition: 0.5s ease all;
+}
+
+#discord a svg:hover {
+    fill: #7785cc;
+    stroke: #7785cc;
+}
+
+#youtube a svg {
+    fill: white;
+    stroke: white;
+    transition: 0.5s ease all;
+}
+
+#youtube a svg:hover {
+    fill: red;
+    stroke: red;
+}
+
+#instagram a svg {
+    fill: white;
+    transition: 0.5s ease all;
+}
+
+#instagram a svg:hover {
+    fill: pink;
+}
+
+#twitter a svg {
+    fill: white;
+    transition: 0.5s ease all;
+}
+
+#twitter a svg:hover {
+    fill: lightblue;
+}
+
+#payhip a svg {
+    stroke: white;
+    transition: 0.5s ease all;
+}
+
+#payhip a svg:hover {
+    stroke: greenyellow;
+}
+
+/* VIDEO SPLASH */
+
+.video-splash {
+    margin: 2% 5%;
+}
+
+.crosses {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.crosses h3 {
+    color: white;
+    font-weight: 300;
+}
+
+.video-player {
+    margin: 2% 0;
+    height: 100%;
+    background-color: black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.youtube-player {
+    position: relative;
+    cursor: pointer;
+}
+
+.youtube-player img {
+    object-fit:cover;
+    width: 100%;
+}
+
+.youtube-player.pristine::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -25px;
+    height: 0;
+    width: 0;
+    border-left: 50px solid white;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    transition: opacity .2s ease;
+}
+
+.youtube-player.pristine:hover::before {
+    opacity: .4;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.footer h6 {
+    color: white;
+    font-weight: 200;
+}
+
+.footer a span {
+    color: red;
+    transition: 0.5s ease all;
+}
+
+.footer a span:hover {
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+/* Use Apps */
+
+.use-app {
+    width: 25px;
+}
+
+.use-app-cont {
+    display: flex;
+    gap: 5px;
+    align-items: end;
+}
+
+.use-app img {
+    filter: invert();
+    width: 25px;
+}
